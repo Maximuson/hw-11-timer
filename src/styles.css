@@ -1,0 +1,38 @@
+html > *{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.timer {
+  display: flex;
+}
+.timer .field {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+  text-align: center;
+  padding: 10px 15px;
+  background-color: lightgreen
+}
+.timer .field:last-child {
+  margin-right: 0;
+}
+.timer .value {
+  padding: 15px;
+  background-color: mediumseagreen;
+  font-family: monospace;
+  font-size: 21px;
+}
